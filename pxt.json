@@ -15,8 +15,12 @@
         "test.ts"
     ],
     "public": true,
+    "targetVersions": {
+        "target": "4.0.29",
+        "targetId": "calliopemini"
+    },
     "supportedTargets": [
         "calliopemini"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
