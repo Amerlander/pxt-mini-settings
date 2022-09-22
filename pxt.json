@@ -22,5 +22,38 @@
     "supportedTargets": [
         "calliopemini"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "tsprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {}
+            }
+        },
+        "optionalConfig": {
+            "microbit-dal": {
+                "bluetooth": {}
+            }
+        },
+        "userConfigs": [
+            {
+                "description": "16 KB RAM and no BLE Services",
+                "config": {
+                    "microbit-dal": {
+                        "bluetooth": {
+                            "enabled": 0,
+                            "pairing_mode": 0,
+                            "partial_flashing": 0,
+                            "dfu_service": 0,
+                            "event_service": 0,
+                            "device_info_service": 0
+                        },
+                        "stack_size": 1280,
+                        "gatt_table_size": "0x000",
+                        "sram_end": "0x20004000",
+                        "RAM_SIZE": "\"16K\""
+                    }
+                }
+            }
+        ]
+    }
 }
